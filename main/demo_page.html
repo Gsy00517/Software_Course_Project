@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <title>Document</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        body,
+        html {
+            font-size: 14px;
+            font-family: 'Microsoft Yahei', '微软雅黑', 'Simsun', '宋体', 'Arial', sans-serif;
+        }
+
+        img {
+            border: 0;
+        }
+
+        a {
+            color: #fff;
+            text-decoration: none;
+            outline: none;
+        }
+
+        ol,
+        ul,
+        li {
+            list-style: none;
+        }
+
+        .head-nav {
+            width: 100%;
+            height: 60px;
+            background: rgb(126, 126, 126);
+        }
+
+        .head-nav-con {
+            width: 1200px;
+            height: 60px;
+            margin: auto;
+        }
+
+        .head-nav-con ul li {
+            width: 170px;
+            float: left;
+            font-size: 20px;
+            text-align: center;
+        }
+
+        .head-nav-con ul li:hover {
+            background: #111;
+        }
+
+        .head-nav-con ul a {
+            display: block;
+            text-decoration: none;
+            text-align: center;
+            line-height: 60px;
+            color: white;
+        }
+
+        .head-nav-con .drop-down {
+            position: relative;
+        }
+
+        .head-nav-con .drop-down-content {
+            padding: 0;
+            display: none;
+            position: absolute;
+            z-index: 1;
+            background: rgb(126, 126, 126);
+        }
+
+        .head-nav-con .drop-down-content li:hover>a {
+            background-color: #111;
+        }
+
+        .head-nav-con .drop-down:hover .drop-down-content {
+            display: block;
+        }
+
+        .head-nav-con .drop-down-2 {
+            position: relative;
+        }
+
+        .head-nav-con .drop-down-content-2 {
+            padding: 0;
+            display: none;
+            position: absolute;
+            z-index: 1;
+            background-color: rgb(126, 126, 126);
+            right: -170px;
+            top: 0;
+        }
+
+        .head-nav-con .drop-down-content-2>li {
+            float: none;
+            background-color: rgb(126, 126, 126);
+        }
+
+        .head-nav-con .drop-down-content-2 li:hover a {
+            background-color: #111;
+        }
+
+        .head-nav-con .drop-down-2:hover .drop-down-content-2 {
+            display: block;
+        }
+    </style>
+
+</head>
+
+<body background="src/bg.png" topmargin=60px bottommargin="16">
+
+    <div class="main">
+        <!--头部-->
+        <div class="header">
+            <div class="head-nav">
+                <div class="head-nav-con clearFloat">
+                    <ul>
+
+                        <li class="drop-down"><a href="#">动态实例</a>
+                            <ul class="drop-down-content">
+                                <li><a href="src/graph-simple.html">simple</a></li>
+                                <li><a href="src/graph-force2.html">force</a></li>
+                                <li><a href="src/graph-force-dynamic.html">dynamic</a></li>
+                            </ul>
+                        </li>
+
+                        <li class="drop-down"><a href="#">参考文档</a>
+                            <ul class="drop-down-content">
+                                <li><a href="https://networkx.github.io/documentation/stable/release/release_2.5.html">NetWorkX</a></li>
+                                <li><a href="https://www.w3school.com.cn/index.html">W3school</a></li>
+                                <li><a href="https://www.runoob.com/">菜鸟教程</a></li>
+                            </ul>
+                        </li>
+
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <p>
+        <font color="#5959AB" size="7">
+            1.合理设计网页布局，包括：用户交互区、可视化区，指标计算区等。<br>
+            2.用户能指定网络类型和网络规模。<br>
+            3.用户能指定网络的失效机制。<br>
+            4.在网络演化过程可视化的同时，显示对应网络结构的相关统计指标。<br>
+            5.用户能查看网络演化过程中的任意拓扑结构及其相关统计指标。<br>
+        </font>
+    </p>
+
+</body>
+
+</html>
